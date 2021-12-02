@@ -1,6 +1,38 @@
+:root {
+  --background-color: #0f0e17;
+  --title-color: #fffffe;
+  --text-color: #fffffe
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+}
+
+h1, h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 2.5rem;
+  padding: 0 48px;
+  color: var(--title-color);
+  z-index: 3;
+}
+
+
+.container {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 section {
   height: 100vh;
-  background-color: red;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 ul {
@@ -18,52 +50,118 @@ a {
 }
 
 a:hover {
-  background-color: #fed330;
   text-decoration: none;
 }
 
 .sticky {
+  display: none;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: beige;
   opacity: 0.8;
 }
 
 .social {
-  padding: 16px;
-  padding-top: 32px;
-}
-
-.green {
-  width: 100vw;
-  background-color: green;
-  border-style: solid;
-  border-width: 1px;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.green.smaller {
+.container-column {
+  background-color: var(--background-color);
+}
+
+.container-column.smaller {
   height: 90vh;
 }
 
-.container {
-  background-color: blue;
+.container-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  max-width: 70%;
 }
 
 .card {
   width: 800px;
   height: 525px;
-  background-color: yellow;
-  border-style: solid;
-  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 24px;
+  z-index: 3;
+}
+
+.spacer {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+}
+
+.top {
+  top: 0;
+}
+
+.waves1 {
+  background-image: url('../assets/01-layered-waves-haikei.svg');
+}
+
+.flip {
+  /* bottom: 100; */
+  transform: rotate(180deg);
+}
+
+.blob-scene {
+  background-image: url('../assets/02-blob-scene-haikei.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave-scene {
+  background-image: url('../assets/03layered-waves-haikei.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blob-bg {
+  background-image: url('../assets/04-blob-bg-haikei.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blob-repeat-bg {
+  background-image: url('../assets/05-circle-scatter-haikei.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave-divider {
+  background-image: url('../assets/06-wave-haikei.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.wave-divider-2 {
+  background-image: url('../assets/07-wave-haike-2i.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.blob-scatter {
+  background-image: url('../assets/08-blob-scatter-haikei.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
