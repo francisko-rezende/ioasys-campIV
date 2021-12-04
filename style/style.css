@@ -1,26 +1,28 @@
 :root {
   --background-color: #0f0e17;
   --title-color: #fffffe;
-  --text-color: #fffffe
+  --text-color: #fffffe;
+  --typewriter-speed: 6s;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Arvo', sans-serif;
   color: var(--text-color);
 }
 
 .icon-color {
-  color: var(--text-color)
+  color: var(--text-color);
+  transition: all 400ms ease-in-out;
 }
 
 .icon-color:hover {
   color: var(--background-color);
-  transition: color 300ms ease-in
+  transform: scale(1.2);
 }
 
 h1, h2 {
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: 2rem; */
   padding: 0 48px;
   color: var(--title-color);
   z-index: 3;
@@ -211,4 +213,55 @@ a:hover {
 .from-right.appear {
   transform: translateX(0);
   opacity: 1;
+}
+
+/* .typewriter-text {
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  min-height: 100vh;
+  text-align: center;
+  background-color: var(--background-color);
+} */
+
+.typewriter-text {
+ font-size: clamp(1rem, 3vw + 1rem, 4rem);
+ position: relative;
+ font-family: 'Ubuntu Mono', monospace;
+ width: max-content;
+ padding: 0;
+}
+
+.typewriter-text::before,
+.typewriter-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typewriter-text::before {
+  background: var(--background-color);
+  animation: typewriter var(--typewriter-speed) steps(34) 1s forwards;
+}
+
+.typewriter-text::after {
+  width: .125em;
+  background-color: var(--title-color);
+  animation: 
+    typewriter var(--typewriter-speed) steps(34) 1s forwards,
+    blink 750ms steps(32) infinite
+}
+
+@keyframes typewriter {
+  to { 
+    left: 100%; 
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
