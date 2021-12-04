@@ -11,11 +11,12 @@
   padding: 40px;
   font-weight: bold;
   border-radius: 25px;
+  width: 80%;
 }
 
 .blob-animation {
   position: absolute;
-  
+
 }
 
 body {
