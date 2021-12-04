@@ -13,6 +13,11 @@
   border-radius: 25px;
 }
 
+.blob-animation {
+  position: absolute;
+  
+}
+
 body {
   font-family: 'Arvo', sans-serif;
   color: var(--text-color);
