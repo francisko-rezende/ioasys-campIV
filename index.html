@@ -1,95 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/css-reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato&family=Montserrat&family=Neuton&family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35bbfde524.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Francisko - Apresentação</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/css-reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Neuton&family=Ubuntu+Mono&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/35bbfde524.js" crossorigin="anonymous"></script>
-  <title>Francisko - Apresentação</title>
-</head>
-
-<body>
-  <header>
-    <nav class="sticky">
-      <ul>
-        <li><a href="#section1">Oi!</a></li>
-        <li><a href="#section2">O que eu quero fazer</a></li>
-        <li><a href="#section3">Um desafio</a></li>
-        <li><a href="#section4">O que me inspira</a></li>
+  <body>
+    <header>
+      <nav class="sticky">
+        <ul>
+          <li><a href="#section1">Oi!</a></li>
+          <li><a href="#section2">O que eu quero fazer</a></li>
+          <li><a href="#section3">Um desafio</a></li>
+          <li><a href="#section4">O que me inspira</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="container-column wave-divider" id="section1">
+        <div class="center">
+          <h1 class="typewriter-text">👋 Opa, beleza? Eu sou o Francisko :)</h1>
+        </div>
+      </section>
+      <section class="container-column wave-divider-2" id="section2">
+        <div class="spacer waves1 top"></div>
+        <h2>O que você quer fazer pelo mundo?</h2>
+        <div class="container-row">
+          <div class="card fade-in from-left desktop-only">
+            <img src="https://placekitten.com/350/350" alt="" />
+          </div>
+          <div class="card fade-in from-right">
+            <p>
+              Eu quero fazer do mundo um lugar mais legal pro máximo de gente
+              possível. Acho que uma forma concreta de fazer isso é através de
+              código.
+            </p>
+            <p>
+              A programação nos permite criar soluções inovadoras pros problemas
+              que enfrentamos atualmente e, com a perspectiva do surgimento de
+              novas tecnologias, as possibilidades do que poderemos fazer pra
+              melhorar o mundo tendem a aumentar ainda mais.
+            </p>
+            <p>
+              Além disso, a programação pode melhorar a vida das pessoas de
+              forma mais individual; tem um tanto de gente precisando de trampo
+              e um tanto de vaga pra programador, organizando direitinho todo
+              mundo
+              <span style="text-decoration: line-through">transa</span> fica
+              feliz. Gostaria de contribuir pra isso dando uma força pra
+              facilitar esse processo compartilhando o que eu for aprendendo,
+              por exemplo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container-column blob-repeat-bg" id="section3">
+        <h2>
+          Conta pra gente um desafio que você superou e um ponto forte que te
+          ajudou a lidar com ele?
+        </h2>
+        <div class="container-row">
+          <div class="card fade-in from-left" data-appear="slide-in">
+            <p>
+              Então, eu tô em processo de transição de carreira. Eu sou biólogo
+              e até o ano passado eu tava fazendo meu doutorado na República
+              Tcheca. Eu tava num projeto show, em um laboratório legal e em um
+              departamento recheado de gente bacana. Era basicamente tudo que eu
+              achei que eu queria, só tinha um porém: eu tava super infeliz.
+              Depois de muita introspecção e terapia eu acabei me dando conta
+              que na real aquilo não tava me movendo e decidi deixar isso pra
+              trás pra ir atrás de algo que me fizesse mais feliz, no caso virar
+              dev.
+            </p>
+            <p>
+              Tomar essa decisão foi um baita desafio pra mim e o ponto forte
+              que mais me ajudou nesse desafio foi uma resiliência que eu nem
+              sabia que eu tinha; lidar com a decisão (e na real com o pós
+              também) foi bem complicado. Conseguir sair das bads e focar nos
+              estudos relativamente rápido foi essencial no caminho que tenho
+              seguido pra alcançar meus objetivos.
+            </p>
+          </div>
+          <div
+            class="card fade-in from-right desktop-only"
+            data-appear="slide-in"
+          >
+            <div
+              style="
+                width: 100%;
+                height: 0;
+                padding-bottom: 56%;
+                position: relative;
+              "
+            >
+              <iframe
+                src="https://giphy.com/embed/vSr0Lgose4rhS"
+                width="100%"
+                height="100%"
+                style="position: absolute"
+                frameborder="0"
+                class="giphy-embed"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a
+              href="https://giphy.com/gifs/adventure-time-advice-jake-the-dog-vSr0Lgose4rhS"
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="container-column blob-scatter" id="section3">
+        <h2>
+          O que te inspira no seu dia-dia de trabalho/estudo?
+        </h2>
+        <div class="container-row">
+          <div
+            class="card fade-in from-left desktop-only"
+            data-appear="slide-in"
+          >
+            <img src="https://placekitten.com/350/350" alt="" />
+          </div>
+          <div class="card fade-in from-right" data-appear="slide-in">
+            <p>
+              De longe o que mais me inspira é a combinação de competência com
+              gentileza. Por “competência” eu quero dizer muitas coisas: pode
+              ser uma explicação sensacional para um conceito difícil, uma forma
+              inovadora e mais efetiva de ser fazer alguma coisa, um tutorial
+              útil, uma forma nova de olhar pra uma situação e por aí vai. O
+              lance é que só isso não é o suficiente pra me inspirar. Quando eu
+              vejo alguém que é competente e gentil, ou seja, a pessoa tá ali
+              disposta a ajudar os outros e é gente boa, por exemplo, aí sim me
+              dá ainda mais gás pra estudar e ser mais parecido com a pessoa.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container-column smaller" id="section4">
+        <h2>O que te inspira no seu dia-dia de trabalho/estudo?</h2>
+        <div class="container-row">
+          <div class="card fade-in from-left" data-appear="slide-in">
+            <p>
+              Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado
+              sem dormir, sentado sem cochilar e fazendo pose. Sapien in monti
+              palavris qui num significa nadis i pareci latim. Casamentiss faiz
+              malandris se pirulitá. Tá deprimidis, eu conheço uma cachacis que
+              pode alegrar sua vidis.
+            </p>
+          </div>
+          <div class="card fade-in from-right" data-appear="slide-in">
+            <img src="https://placekitten.com/350/350" alt="" />
+          </div>
+        </div>
+      </section>
+      <ul class="social blurry-gradient-bg">
+        <li>
+          <a href="https://www.instagram.com/?hl=en"
+            ><i class="fa fa-linkedin fa-lg icon-color"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/?hl=en"
+            ><i class="fa fa-github fa-lg icon-color"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=en"
+            ><i class="fa fa-twitter fa-lg icon-color"></i
+          ></a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="container-column wave-divider" id="section1">
-      <div class="container-row">
-        <h1>Opa, beleza?</h1>
-        <div class="card"><img src="https://placekitten.com/350/350" alt=""></div>
-      </div>
-    </section>
-    <section class="container-column wave-divider-2" id="section2">
-      <div class="spacer waves1 top"></div>
-      <h2>O que você quer fazer pelo mundo?</h2>
-      <div class="container-row">
-        <div class="card fade-in from-left"><img src="https://placekitten.com/350/350" alt=""></div>
-        <div class="card fade-in from-right">
-          <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e
-            fazendo pose. Sapien in monti palavris qui num significa nadis i pareci latim. Casamentiss faiz malandris se
-            pirulitá. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
-        </div>
-      </div>
-    </section>
-    <section class="container-column blob-repeat-bg" id="section3">
-      <h2>Conta pra gente um desafio que você superou e um ponto forte que te ajudou a lidar com ele? </h2>
-      <div class="container-row">
-        <div class="card fade-in from-left" data-appear="slide-in">
-          <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e
-            fazendo pose. Sapien in monti palavris qui num significa nadis i pareci latim. Casamentiss faiz malandris se
-            pirulitá. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
-        </div>
-        <div class="card fade-in from-right" data-appear="slide-in">
-          <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
-              src="https://giphy.com/embed/vSr0Lgose4rhS" width="100%" height="100%" style="position:absolute"
-              frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><a
-            href="https://giphy.com/gifs/adventure-time-advice-jake-the-dog-vSr0Lgose4rhS"></a>
-        </div>
-      </div>
-    </section>
-    <section class="container-column blob-scatter" id="section3">
-      <h2>Conta pra gente um desafio que você superou e um ponto forte que te ajudou a lidar com ele? </h2>
-      <div class="container-row">
-        <div class="card fade-in from-left" data-appear="slide-in"><img src="https://placekitten.com/350/350" alt=""></div>
-        <div class="card fade-in from-right" data-appear="slide-in">
-          <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e
-            fazendo pose. Sapien in monti palavris qui num significa nadis i pareci latim. Casamentiss faiz malandris se
-            pirulitá. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
-        </div>
-      </div>
-    </section>
-    <section class="container-column smaller" id="section4">
-      <h2>O que te inspira no seu dia-dia de trabalho/estudo?</h2>
-      <div class="container-row">
-        <div class="card fade-in from-left" data-appear="slide-in">
-          <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e
-            fazendo pose. Sapien in monti palavris qui num significa nadis i pareci latim. Casamentiss faiz malandris se
-            pirulitá. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
-        </div>
-        <div class="card fade-in from-right" data-appear="slide-in"><img src="https://placekitten.com/350/350" alt=""></div>
-      </div>
-    </section>
-    <ul class="social blurry-gradient-bg">
-      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-linkedin fa-lg icon-color"></i></a></li>
-      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-github fa-lg icon-color"></i></a></li>
-      <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter fa-lg icon-color"></i></a></li>
-    </ul>
-  </main>
-  <script src="./script/script.js"></script>
-</body>
-
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
 </html>

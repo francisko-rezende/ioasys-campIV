@@ -22,7 +22,7 @@ body {
 
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
-  /* font-size: 2rem; */
+  font-size: 2rem;
   padding: 0 48px;
   color: var(--title-color);
   z-index: 3;
@@ -99,9 +99,6 @@ a:hover {
 .card {
   width: 800px;
   height: 525px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 24px;
   z-index: 3;
 }
@@ -243,15 +240,15 @@ a:hover {
 
 .typewriter-text::before {
   background: var(--background-color);
-  animation: typewriter var(--typewriter-speed) steps(34) 1s forwards;
+  animation: typewriter var(--typewriter-speed) steps(37) 1s forwards;
 }
 
 .typewriter-text::after {
   width: .125em;
   background-color: var(--title-color);
   animation: 
-    typewriter var(--typewriter-speed) steps(34) 1s forwards,
-    blink 750ms steps(32) infinite
+    typewriter var(--typewriter-speed) steps(37) 1s forwards,
+    blink 750ms steps(37) infinite
 }
 
 @keyframes typewriter {
@@ -264,4 +261,20 @@ a:hover {
   to {
     background: transparent;
   }
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 1900px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
