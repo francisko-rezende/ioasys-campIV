@@ -2,7 +2,15 @@
   --background-color: #0f0e17;
   --title-color: #fffffe;
   --text-color: #fffffe;
+  --highlight: #ff8906;
   --typewriter-speed: 6s;
+}
+
+.warning {
+  background-color: var(--highlight);
+  padding: 40px;
+  font-weight: bold;
+  border-radius: 25px;
 }
 
 body {
@@ -277,4 +285,8 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.warning {
+
 }
