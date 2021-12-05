@@ -281,6 +281,10 @@ a:hover {
   display: none;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 @media (min-width: 1900px) {
   .desktop-only {
     display: block;
@@ -291,8 +295,4 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.warning {
-
 }
